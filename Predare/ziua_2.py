@@ -126,3 +126,24 @@ elif nrx % 2 == 0:
     print("Numar par")
 else:
     print("numar impar")
+
+#Alte functii cu strings
+strx_1 = "afara ploua, Elena se joaca cu Ana."
+print(strx_1.lower()) #litere mici
+print(strx_1.upper()) #litere mari
+print(strx_1.capitalize()) #Transofrma primul caracter in UPPERCASE si restul in lowercase.
+
+#concatenare de strings
+s1 = 'Afara'
+s2 = 'ploua'
+s3 = s1 + " " + s2
+#sau
+s4 = f"{s1} {s2}"
+print(s3)
+print(s4)
+
+strx_2 = strx_1.replace("Ana", "Maria")
+print(strx_2)
+
+strx_3 = "In curte la Elena ploua, Elena se joaca cu Ana."
+print(strx_3.find("Elena")) #indexul unde apare prima data sub-string-ul Elena
