@@ -155,7 +155,7 @@ for el in range(200, 1, -4): #de la 200 inclusiv pana la 1 exclusiv din 4 in 4 d
     print(el, end=", ") #200, 196, 192, 188, 184
 
 ceva_range = range(1,10, 2)
-print(ceva_range) #range(1,10,2)
+print(ceva_range) #range(1,10,2), un obiect cu logica de range.
 #ca sa extragem lista din obiectul range, folosim functia list
 print(list(ceva_range))
 
@@ -183,3 +183,16 @@ for nume, varsta, profesie in studenti:
 
 #Data viitoare
 #exemple impreuna- loops, control flow - b,c,p, comprehension, ex indiv cu ajutor.
+
+#liste [ : listax = [1,2,3]
+#index [ : element = listax[1] -al doilea element din listax
+#elemente din dictionar [: in dictionarul dx = {"nume":"Andrei"}, putem accesa valoarea cheii cu valoare = dx["nume"]
+#dictionarul se defineste prin { si cheie:valoare.
+#set { : sx = {1,2,3}
+#tuple ( : tx = (1,2,3)
+#functii (: print(123), range(1,20), string.lower()...
+sx = "ceva text"
+ix = 123456
+fx = 1234.243
+bx = True
+
