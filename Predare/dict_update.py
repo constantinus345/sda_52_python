@@ -15,3 +15,5 @@ alti_bunici = {"prenume": ["George", "Anastasia"],
 dx["prenume"].extend(alti_bunici["prenume"])
 dx["varste"].extend(alti_bunici["varste"])
 print(dx)
+
+#TODO append with for
