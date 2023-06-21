@@ -148,5 +148,29 @@ while True:
         print("Ai ghicit corect")
         break
 
+#Utilizează un loop while pentru a calcula cate numere de la 1 la 10**8 sunt divizibile cu 13, 17 si 23 concomitent.
+pana_la = 10**8
+nr = 10
+counter = 0
+divizibil_cu = 13*17*23
+while True: #Se executa pana cand il opresc din interiorul buclei
+    #alternativ while conditie, de exemplu while nr < 1000:
+    if nr % divizibil_cu == 0: #am verificat daca restul impartirii nr la 13*17*23 este 0
+        print(nr)
+        counter += 1 #aici stocam de cate ori a gasit un numar ce satisface conditia
+
+    nr +=1 #am crescut nr cu o unitate, ca sa mearga de la 1 la 10**8 unu cate unu.
+
+    if nr > pana_la: #cand ajunge la limita de 10**8 se opreste bucla while
+        break
+
+print(f"Sunt {counter} numere divizibile cu 13*17*23 pana la {pana_la}")
+
+
+
+
+
+
+
 
 
