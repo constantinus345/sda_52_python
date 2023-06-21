@@ -10,3 +10,7 @@ for n in range(1,101):
     if n % 3 == 0:
         lista_mea_clasic.append(n**2)
 print(lista_mea_clasic)
+
+#Daca vreau ca patratele sa fie intre 1 si 100 inclusiv, divizibil cu 3
+lista_patrate_100 = [n**2 for n in range(1,101) if (n**2 <= 100) and (n % 3 == 0)]
+print(lista_patrate_100)
