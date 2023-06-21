@@ -100,7 +100,7 @@ print("tuple = ", tupx)
 strx = "Afara ploua, dar cine a mai fost afara"
 print(strx.split()) #['Afara', 'ploua,', 'dar', 'cine', 'a', 'mai', 'fost', 'afara']
 setx = {word.lower() for word in strx.split()}
-#setx = {word for word in strx.split()} #{'ploua,', 'Afara', 'mai', 'afara', 'cine', 'dar', 'a', 'fost'}
 print(setx) #{'ploua,', 'afara', 'mai', 'cine', 'dar', 'a', 'fost'}
 #lower transforma in lowercase
 
+#setx = {word for word in strx.split()} #{'ploua,', 'Afara', 'mai', 'afara', 'cine', 'dar', 'a', 'fost'}
