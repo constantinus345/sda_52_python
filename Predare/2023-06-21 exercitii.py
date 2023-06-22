@@ -19,4 +19,4 @@ print(lista_patrate_100)
 propozitia = "Ce mai faci mai Ionele"
 list_cuv = [len(cuv) for cuv in propozitia.split()]
 #propozitia.split() imi extrage fiecare cuvant din propozitie
-print(list_cuv)
+print(list_cuv) #[2, 3, 4, 3, 6]
