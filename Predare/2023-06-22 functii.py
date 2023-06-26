@@ -19,8 +19,8 @@ def email_personalizat(prenume, suma_cumparat):
 
 l_prenume = ["Ion", "Elena", "Ana"]
 l_sume = [123, 12345, 54635]
-for index, element in enumerate(l_prenume):
-    print(email_personalizat(element, l_sume[index]))
+for index, prenume in enumerate(l_prenume):
+    print(email_personalizat(prenume, l_sume[index]))
 
 #enumerate- ne ofera posibilitatea de a accesa indexul si valoarea
 prenume = ["Ion", "Elena", "Ana", "Ion"]
