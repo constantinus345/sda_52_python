@@ -69,4 +69,18 @@ functie_complicata()
 timp_took =  perf_counter() - timp_start
 print(f"Operatiunea a durat {timp_took} secunde")
 
+import datetime
+
+acum = datetime.datetime.now()
+print(acum)
+print(acum.year)
+print(acum.month)
+print(acum.minute)
+
+format_1 = acum.strftime("%Y-%B-%d")
+print(format_1)
+format_2 = acum.strftime("%d-%m-%y")
+print(format_2)
+#Tabel de formatare zile https://www.w3schools.com/python/python_datetime.asp
+#documentatie oficiala datetime https://docs.python.org/3/library/datetime.html
 
