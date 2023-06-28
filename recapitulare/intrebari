@@ -1,0 +1,5 @@
+- cum stocam date intr-un fisier, de ex dictionar, si apoi le citim ca atare
+(adica in tipul lor de date, nu ca text) : pickle, from a import dictx
+
+
+
