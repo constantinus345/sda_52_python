@@ -4,7 +4,7 @@ def email_personalizat(nume, voucher_procent, *args, **kwargs):
     for cump in args:
         suma_totala += cump
 
-    # Magazinele unde poate primi un voucher de 20% din suma totala cumparata pana acum
+    # Magazinele unde poate primi un voucher de voucher_procent% din suma totala cumparata pana acum
     magazinele = ""  # am initializat un string gol
     for key, value in kwargs.items():
         magazinele += f"Magazinul {key} la adresa {value}\n"
