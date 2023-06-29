@@ -83,3 +83,25 @@ def exemplu_keywords(**kwargs):
 
 exemplu_keywords(nume="Ion", varsta=15, localitate="Brasov")
 
+def suma(a,b):
+    suma_mea = a +b
+    print("Rezultatul este")
+    print(f"rezultatul din functie = {suma_mea}")
+    print("Gata")
+
+    return suma_mea
+
+var_8 = suma(3,4)
+print(f"Rezultatul stocat in variabila = {var_8}")
+
+def comanda_restaurant(**kwargs):
+    for produs, cantitate in kwargs.items():
+        print(f"Produsul {produs} a fost pregatit cu {cantitate} portii")
+
+    #return "Pofta mare"
+
+mananc_azi = comanda_restaurant(icre=3, paste=2)
+if mananc_azi is None: #is None -> nu are valoare, adica nu am dat return vreo valoare
+    print("Produsele sunt gata, dar sunt la bucatarie (nu avem return)")
+else:
+    print(mananc_azi)
