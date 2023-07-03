@@ -36,7 +36,7 @@ class AngajatLaStat(Cetatean):
     def altceva_despre(self):
         Text = ""
         for key, val in self.kwargs.items():
-            Text += f"{key} -> {val}\n"
+            Text += f"{key} --> {val}\n" #\n = newline, adica se duce pe rand nou
         print(f"Altceva despre mine: \n{Text}")
 
 Angajat_Vasilica = AngajatLaStat(prenume="Vasile",
@@ -69,3 +69,6 @@ Angajata_Ileana.modificare_nume("Ilenuzza")
 Angajata_Ileana.intro_yourself()
 
 Angajata_Ileana.altceva_despre()
+
+# frumos = "Cel mai frumos"
+# print(f"Ion are 32 ani \nAna are 22 ani Elena are 34 ani {frumos}") #\n  un fel de enter/ newline

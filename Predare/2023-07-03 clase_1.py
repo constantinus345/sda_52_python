@@ -76,10 +76,15 @@ print(Andrei.numar_corect())
 class Animal:
 
     def __init__(self, dieta: str, varsta: int, domestic: bool, vertebrat: bool):
+        #:str, :bool etc -> se numeste type hinting,
+        #adica ne ajuta sa vedem ce tipuri de date intentionam sa folosim
+        #spre deosebire de alte limbaje de programare stricte la tipurile de date,
+        #Python este dinamic, astfel nici hinturile nu sunt obligatorii!
         self.dieta = dieta
         self.varsta = varsta
         self.domestic = domestic
         self.vertebrat = vertebrat
+
 
     def botez(self):
         numele = input("Cum il cheama pe animal ? = ")
