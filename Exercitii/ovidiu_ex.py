@@ -38,5 +38,5 @@ Date de ieșire: se va afișa în ordinea poziției după acordarea penalizăril
 20. Proiect - Oracol.
 Scrieți un program care să creeze un fișier text cu rol de jurnal personal. Programul trebuie să afișeze/informeze utilizatorul la fiecare pas, să verifice existența fișierului și să afișeze "Am creat fișierul!"; "Fișierul există, ce doriți să faceți? Introduceți 1 pentru citire, 2 pentru adăugări, 3 pentru ștergerea definitivă a fișierului, 0 pentru ieșire".
 Atenție! Folosiți modulul datetime (documentați-vă pe Internet): from datetime import date și data = date.today() sau folosiți o altă metodă (citire de la tastatură) pentru a putea insera data curentă la începutul fiecărei adăugări.
-
 """
+
