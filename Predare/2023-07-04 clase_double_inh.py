@@ -42,3 +42,6 @@ robo = RobotAngajat(producator = "Bosch",
 
 print(robo.nr_reparatii)
 print(robo.nr_membre)
+
+# nr = input("Zi ceva  = ")
+# print(f"Ai ales {nr}")
