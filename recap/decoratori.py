@@ -156,3 +156,19 @@ def impartirea(a,b):
 print(impartirea(3,5))
 print(impartirea(3,0))
 
+
+#Scriem o functie pentru a accesa o pagina web
+import requests
+#pip install requests
+
+@retry_multiple(2)
+def acceseaza_site(wesbite_url):
+    raspuns = requests.get(wesbite_url)
+    return raspuns.content
+
+pagina_1 = "https://en.wikipedia.org/wiki/English_Wikipedia"
+pagina_2 = "https://en.wikipeda.org/wiki/English_Wikipedia"
+
+print(len(acceseaza_site(pagina_1))) #printez lungimea paginii web/ a raspunsului
+print(len(acceseaza_site(pagina_2)))
+
