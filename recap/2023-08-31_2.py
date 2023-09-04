@@ -130,3 +130,7 @@ def adauga_element_v2(numar, lista = None):
 
 print(adauga_element_v2(3)) #rezultat asteptat = [9], printat de fapt = [9]
 print(adauga_element_v2(4)) #rezultat asteptat = [16], printat de fapt = [16]
+
+
+
+

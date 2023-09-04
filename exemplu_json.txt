@@ -1,0 +1,1 @@
+{"cheie_1": 1, "cheie_2": true, "adresa": {"strada": "Unirii", "nr": 23}}
