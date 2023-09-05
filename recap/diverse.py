@@ -1,4 +1,6 @@
 #functie care calculeaza suma cifrelor dintr-un string
+import re
+
 
 def suma_cifrelor(stringx):
     suma = 0
@@ -17,3 +19,10 @@ print(suma_cifrelor(strx))
 lista = ['1h2nhb-98', 'hfsd755']
 lista_suma = [suma_cifrelor(x) for x in lista]
 print(lista_suma)
+
+
+text_localitati = "Anul acesta am vizitat Brasov, Bucuresti, Iasi si Arad"
+pattern_ab = r'\b[A|B]\w+\b'
+
+matches = re.findall(pattern_ab, text_localitati)
+print(matches)
