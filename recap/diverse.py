@@ -29,3 +29,4 @@ pattern_ab = r'\b[A|B]\w+\b'
 
 matches = re.findall(pattern_ab, text_localitati)
 print(matches)
+
