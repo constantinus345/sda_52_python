@@ -54,3 +54,50 @@ def fibo_dinamic(nth):
 print(fibo_dinamic(9))
 
 #factorial 4! = 1*2*3*4
+#0! = 1
+
+def factorial_clasic(n):
+    rez = 1
+    for x in range(1, n+1):
+        rez *= x #rez = rez * x
+    return rez
+
+
+
+def factorial_recurent(n):
+    if n == 0:
+        return 1
+    return n * factorial_recurent(n-1)
+
+def factorial_dinamic(n):
+    #Initializez o lista cu rezultatele calculate
+    lista = [1] * (n+1) #creez o lista cu n+1 elemente, initial toate vor fi 1
+    #[1,1,1,1,1,1,1.....]
+    #print(f"Prima lista = {lista}")
+    #dupa care lista va fi umpluta cu solutiile corecte/calculate
+    for x in range(2, n+1):
+        lista[x] = x * lista[x-1]
+        #print(f"La elementul {x} avem lista {lista}")
+
+    return lista[n] #returnez toata lista cu rezultate, sau pot doar elementul lista[n]
+
+nx = 6
+print(f"Rezultatul la {nx}! prin clasic = {factorial_clasic(nx)}")
+print(f"Rezultatul la {nx}! prin recurent = {factorial_recurent(nx)}")
+print(f"Rezultatul la {nx}! prin dinamic = {factorial_dinamic(nx)}")
+
+#librarii built-in
+from math import factorial
+print(f"Rezultatul la {nx}! prin libraria math = {factorial(nx)}")
+
+import numpy
+#librarie pentru data science/ data engineering
+from numpy import prod #prod calculeaza produsul numerelor dintr-o lista
+print(prod([2,10,4]))
+lista_numere = [x for x in range(1, nx+1)]
+print(f"Lista de numere este {lista_numere}")
+print(f"produsul numerelor din lista este {prod(lista_numere)}")
+
+# import math
+# help(math) #help imi ofera documentatia la un anumit element
+
