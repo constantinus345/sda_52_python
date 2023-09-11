@@ -12,7 +12,7 @@ async def get_weather_temp(city):
 
         # returns the current day's forecast temperature (int)
         temp = weather.current.temperature
-        raport = f"In {city} temperatura acum este {temp}"
+        raport = f"In {city} temperatura acum este {temp} grade Celsius"
 
         return raport
 
